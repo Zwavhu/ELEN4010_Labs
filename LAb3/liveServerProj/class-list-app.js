@@ -18,8 +18,23 @@ document.querySelector('#search-text').addEventListener('input', function(e){
       let text = document.createTextNode(student.value)
       li.appendChild(text)
       ul.appendChild(li)
+      var $myArray = $('#theLink').attr('data-title');
      
     //   document.body.appendChild(ul) // append <p> to body
     },
     false
   )
+
+//   TASK2: Filtering
+
+function filterStudent(){
+    let studentList = document.getElementById('dynamic-list')
+    let student = document.getElementById('new-student-text')
+    let studentName = document.getElementById(student.value)
+
+    // converting Nolist into an array since filter does not work on non-arrays
+    let items = document.querySelectorAll('li')
+    let itemsArray = Array.from(items)
+
+    studentList.filter(itemsArray)
+}
