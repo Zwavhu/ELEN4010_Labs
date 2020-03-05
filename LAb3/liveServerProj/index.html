@@ -1,26 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="index.js"></script>
-
-    <title>Document</title>
-  </head>
-  <body>
-    <h1 id="heading">This is a header</h1>
-    <button id="myButton">Add-H</button>
-    <button type="button" id="addButton">Add</button>
-    <button type="imgButton" id="addImg">Add an image</button>
-    <header id="addheaderText"></header>
-    <div id="student list"></div>
-    <div type="checkbox" id="input"></div>
-    <a href="http://www.w3schools.com/html/">link text</a>
-    <button id="listButton" onclick="remList()">Remove from list</button>
-    <ul id="mylist">
-      <li>Beef</li>
-      <li>chicken</li>
-      <li>Fish</li>
-    </ul>
-  </body>
+<html>
+<head>
+</head>
+<body>
+<h1>Class List</h1>
+<!-- 'input' is an empty element, it consists of single tag -->
+<input type="text" id="search-text" placeholder="Filter students">
+<div id="students">
+</div>
+<input type="text" id="new-student-text" placeholder="Name">
+<button id="add-student" onclick="addStudent()">Add new student</button>
+<ul id="dynamic-list"></ul>
+<script src="class-list-app.js">
+</script>
+</body>
 </html>
+<!-- See https://developer.mozilla.org/en-US/docs/Web/HTML -->
+<!-- Note the reference guide: -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference -->
