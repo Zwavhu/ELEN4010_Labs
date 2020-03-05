@@ -61,3 +61,29 @@ labelElem.appendChild(labelText)
 labelElem.appendChild(inputElem)
 
 document.body.appendChild(labelElem)
+
+// Dynamically adding elements
+const button1 = document.getElementById('myButton')
+button1.addEventListener(
+  'click',
+  function () {
+    const headerElement = document.getElementById('heading')
+    headerElement.innerHTML = 'My New Heading';
+  },
+  false
+)
+
+// const button2 = document.getElementById('listButton')
+// button2.addEventListener(
+//   'click',
+//   function () {
+//     const list = document.getElementById('myList')
+//     list.removeChild(list.childNodes[0])
+//   },
+//   false
+// )
+
+function remList () {
+  const list = document.getElementById('myList')
+  list.removeChild(list.childNodes[0])
+}
