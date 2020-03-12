@@ -15,18 +15,21 @@
       let text = document.createTextNode(student.value)
       li.appendChild(text)
       ul.appendChild(li)
-     
-     
     //   document.body.appendChild(ul) // append <p> to body
     },
     false
   )
+ 
+  // document.querySelector('#search-text').addEventListener('input', function(e){
+     
+     
+  // },false)
 
-  const someStuff = document.querySelector('#student-text').addEventListener('input', function(e){
-    
-  },false)
+  const help = document.querySelector('#search-text')
+  console.log(help)
 
-  console.log(someStuff)
+ 
+
 
 //   TASK2: Filtering
 
