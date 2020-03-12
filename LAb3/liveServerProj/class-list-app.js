@@ -1,8 +1,5 @@
 //1.1-Creating class list filter
 
-document.querySelector('#search-text').addEventListener('input', function(e){
-    // DO SOMETHING
-    })
   
     // Exercise 3
    //TASK 1-Dynamically add a a students list, add An entire list with one button click
@@ -10,7 +7,7 @@ document.querySelector('#search-text').addEventListener('input', function(e){
   
   studentNameButton.addEventListener(
     'click',
-    function addStudent() {
+    function() {
       let ul = document.getElementById('dynamic-list') 
       let student = document.getElementById('new-student-text') 
       let li = document.createElement('li')
@@ -18,23 +15,30 @@ document.querySelector('#search-text').addEventListener('input', function(e){
       let text = document.createTextNode(student.value)
       li.appendChild(text)
       ul.appendChild(li)
-      var $myArray = $('#theLink').attr('data-title');
+     
      
     //   document.body.appendChild(ul) // append <p> to body
     },
     false
   )
 
+  const someStuff = document.querySelector('#student-text').addEventListener('input', function(e){
+    
+  },false)
+
+  console.log(someStuff)
+
 //   TASK2: Filtering
 
-function filterStudent(){
-    let studentList = document.getElementById('dynamic-list')
-    let student = document.getElementById('new-student-text')
-    let studentName = document.getElementById(student.value)
+// function filterStudent(){
+//     let studentList = document.getElementById('dynamic-list')
+//     let student = document.getElementById('new-student-text')
+//     let studentName = document.getElementById(student.value)
+//     var $myArray = $('dynamic-list').attr('id');
 
-    // converting Nolist into an array since filter does not work on non-arrays
-    let items = document.querySelectorAll('li')
-    let itemsArray = Array.from(items)
+//     // converting Nolist into an array since filter does not work on non-arrays
+//     let items = document.querySelectorAll('li')
+//     let itemsArray = Array.from(items)
 
-    studentList.filter(itemsArray)
-}
+//     studentList.filter($myArray)
+// }
